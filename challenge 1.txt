@@ -1,0 +1,22 @@
+react.js coding challenge 3-6 hrs
+We have identified a major problem in our process which is keeping the company from competing with google.
+As a matter of fact, we don't know what's for lunch unless we go to the restaurant and look at the menu bulletin in the hallway. But every developer here is pretty lazy, so no one would get up from their seat just to find out that the daily menu is too healthy for them. So, today at lunch table, we came up with an idea and we need a new react.js engineer to do the task.
+Hence we came up with a new project. We need a specialized web-based content management system so that every employee can easily open a web page on their mobile to look up the menu of the week or the day. This should have an optile logo and maybe even the optile colours.
+
+The only one who should be able to change the menu is the cook, who has no clue about computers or IT at all, so all he could find is how to enter text and a submit button. So he would enter the menu of the week as a text into a web form. But since the cook actually has no clue about technology and this is a prototype, he wouldn't even recognize this as just a dummy button. After the cook thinks, he has changed the menu, he would like to print a very simple table of pricing in the hallway for the rest of the week because the people from talent acquisitions don't know how to operate a computer, too. Talking about changing the menu: as a side task, the content of the menu could be versioned and via GitLab integration API saved automatically in a gitlab account whenever changed.
+As a matter of fact, there is a two class system in pricing in the company, in which the management pays a lower price on some menus, so that for some people, main dishes cost 1.50 euros more than for the management people.
+The sales department, who is too busy all day fending off customers to check the menu proactively, wants to be informed of the lunch menu of the day when the menu changes in a special slack channel because otherwise they would starve and the management would be overrun by new customers. But no real developer is listening to them anyway, so this might also be an optional point in the project.
+Due to the high priority of this project, we dropped some feature requests from Amazon, Microsoft and NASA to reply to any of your questions in time.
+
+
+Provided resources:
+gitlab integration:
+howto: https://docs.gitlab.com/ee/api/commits.html#create-a-commit-with-multiple-files-and-actions
+account: <optile-test-account>
+password: <optile-test-pw>
+git url: <optile git project to post in url>
+
+slack integration:
+howto: https://api.slack.com/methods/chat.postMessage
+authentication token: <optile-slack-token>
+channel <optile-slack-test-channel>
