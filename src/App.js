@@ -5,7 +5,7 @@ class App extends Component {
   handleUploadFile(event) {
     const data = new FormData();
     data.append('file', event.target.files[0]);
-    axios.post('/files', data).then((response) => {
+    axios.post('http://localhost:8080/menu', data).then((response) => {
       console.log(response);
     });
   }
@@ -16,7 +16,7 @@ class App extends Component {
           <h1>Optile Menu <small className="hidden-sm">Optile react.js coding challenge</small></h1>
         </div>
         <div className="thumbnail">
-          <img src="..." alt="..." /
+          <img src="http://localhost:8080/menu" alt="Lunch menu" /
 >          <div className="caption">
             <p>See what we have for lunch without leave your seat</p>
             <p>
