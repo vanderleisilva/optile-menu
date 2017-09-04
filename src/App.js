@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
 
 class App extends Component {
+  handleUploadFile(event) {
+    const data = new FormData();
+    data.append('file', event.target.files[0]);
+    axios.post('/files', data).then((response) => {
+      console.log(response);
+    });
+  }
   render() {
     return (
       <div className="container-fluid">
@@ -10,14 +16,14 @@ class App extends Component {
           <h1>Optile Menu <small className="hidden-sm">Optile react.js coding challenge</small></h1>
         </div>
         <div className="thumbnail">
-          
           <img src="..." alt="..." />
           <div className="caption">
             <p>See what we have for lunch without leave your seat</p>
             <p>
-              <a href="#" className="btn btn-primary" title="Update Menu" role="button">
-                Update <span className="glyphicon glyphicon-upload" aria-hidden="true"></span>
-              </a> 
+              <label title="Update Menu" className="btn btn-primary">
+                  Update <span className="glyphicon glyphicon-upload" aria-hidden="true"></span> 
+                  <input type="file" className="hidden" onChange={this.handleUploadFile} />
+              </label>
             </p>
           </div>
         </div>
