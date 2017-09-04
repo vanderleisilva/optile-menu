@@ -16,8 +16,8 @@ class App extends Component {
           <h1>Optile Menu <small className="hidden-sm">Optile react.js coding challenge</small></h1>
         </div>
         <div className="thumbnail">
-          <img src="..." alt="..." />
-          <div className="caption">
+          <img src="..." alt="..." /
+>          <div className="caption">
             <p>See what we have for lunch without leave your seat</p>
             <p>
               <label title="Update Menu" className="btn btn-primary">

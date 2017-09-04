@@ -8,6 +8,7 @@
 
 # production
 /build
+/public/menu
 
 # misc
 .DS_Store
