@@ -1,6 +1,6 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
+  "name": "optile-menu",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@slack/client": "^3.12.0",
