@@ -12,19 +12,20 @@ $ yarn install
 Duplicate the file: **server/env.sample** and rename to **server/env.js**
 In the **en.js** file add your slackbot token 
 
-Run tests.
+### Run tests.
 ```sh
 $ npm test
 ```
-Run backend server.
+### Run backend server.
 ```sh
 $ node server
 ```
-Run frontend development server (run simultaneously with backend server).
+### Run frontend development server (run simultaneously with backend server).
 ```sh
 $ npm start
 ```
 
-On slack with the slackbot chat ask him:
+#### On slack with the slackbot chat ask him:
+
 **what's for lunch?**
 And then your're going to have your menu without leaving your seat ;)
