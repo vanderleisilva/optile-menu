@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vanderleisilva/optile-menu.svg?branch=master)](https://travis-ci.org/vanderleisilva/optile-menu)
+
 # README #
 
 This repo is created as a public read-only resource for coding challenges during the hiring process at optile.
