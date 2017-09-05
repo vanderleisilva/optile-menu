@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const fs = require('fs'); 
 const upload = require('formidable');
-const fileName = __dirname + '/public/menu/1.jpg'; 
+const fileName = __dirname + '/public/menu/1.jpg';
+const token = 'xoxb-237143336086-eY5wlMUuI970fynEknrWgSXb'; 
 
 app.use(require('cors')());
 
-app.get("/menu", function (request, response) {
+app.get("/menu", (request, response) => {
 	fs.stat(fileName, (err, stat) => {
 		if(err == null) {
 			response.sendFile(fileName);
@@ -17,7 +18,7 @@ app.get("/menu", function (request, response) {
 	});
 });
 
-app.post("/menu", function (request, response) {
+app.post("/menu", (request, response) => {
 	var form = new upload.IncomingForm();
 
 	form.parse(request, (err, fields, files) => {
@@ -29,6 +30,7 @@ app.post("/menu", function (request, response) {
 	});
 });
 
-const listener = app.listen(8080, function () {
+const listener = app.listen(8080, () => {
 	console.log('Your app is listening on port ' + listener.address().port);
+	require('./slack')(fileName, token);
 });
