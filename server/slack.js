@@ -33,9 +33,7 @@ module.exports = (fileName, token) => {
 			web.files.upload(fileName, streamOpts, function(err, res) {
 				if (err) {
 					console.log('Error:', err);
-				} else {
-					console.log('Message sent: ', res);
-				}
+				} 
 			});
 		}
 	});
