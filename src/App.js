@@ -8,7 +8,7 @@ class App extends Component {
         <div className="page-header">
           <h1>Optile Menu <small className="hidden-sm">Optile react.js coding challenge</small></h1>
         </div>
-        <Upload apiUrl="http://localhost:8080" />      
+        <Upload apiUrl="http://localhost:8080" extensions={[ 'image/png', 'image/jpeg' ]} />      
       </div>
     );
   }
